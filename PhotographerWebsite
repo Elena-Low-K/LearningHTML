@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Ukrainian Photographer 🇺🇦</title>
+
+    <style>
+      body {
+        background-color: #ffeedd;
+      }
+      h1 {
+        font-size: 40px;
+        color: #108a7e;
+        background-color: #93e4c1;
+        text-align: center;
+
+        border: 2px solid #93e4c1;
+        border-radius: 15px;
+        padding: 2% 20% 2% 20%;
+        transition: all 200ms ease-in-out;
+      }
+      h1:hover {
+        color: #93e4c1;
+        background-color: #108a7e;
+        border: 2px solid #108a7e;
+      }
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+      h3 {
+        display: inline;
+        text-align: center;
+      }
+      ul,
+      li {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      li.description {
+        font-size: 18px;
+        list-style: disc;
+        text-align: center;
+      }
+
+      /*Images CSS*/
+      li.images {
+        margin: 20px;
+        display: inline;
+        list-style: none;
+      }
+      img {
+        padding: 10px;
+        transition: transform 0.4s;
+      }
+      img:hover {
+        opacity: 75%;
+        transition: opacity 0.4s;
+        transform: scale(1.05);
+        transition: transform 0.4s;
+      }
+      .portrait {
+        max-width: 25%;
+      }
+      .nature {
+        max-width: 28.1%;
+      }
+      .cat {
+        max-width: 30%;
+      }
+      /*ul and li CSS*/
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
+      li.photoTitles {
+        color: #108a7e;
+        font-size: 20px;
+
+        margin: 9%;
+        display: inline;
+        list-style: none;
+
+        padding: 0;
+        border: 2px solid #93e4c1;
+        border-radius: 10%;
+        padding: 8px 10px;
+        background: #93e4c1;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        display: inline;
+        margin: 15% 3%;
+        padding: 2px;
+      }
+
+      /*Pack descriptions CSS*/
+      li.priceOfPhotoshoot {
+        list-style: none;
+        display: inline;
+        text-align: center;
+        margin: 12%;
+      }
+      li.timeOfPhotoshoot {
+        list-style: none;
+        display: inline;
+        margin: 6%;
+      }
+      li.locationOfPhotoshoot {
+        list-style: none;
+        display: inline;
+        margin: 2%;
+      }
+      li.amountOfPhotos {
+        list-style: none;
+        display: inline;
+      }
+      li.timeForEditing {
+        list-style: none;
+        display: inline;
+        margin: 2%;
+      }
+      li.warning {
+        display: inline;
+        margin: 10%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 19px;
+        font-weight: bold;
+
+        color: #fcf7f8;
+        background-color: #108a7e;
+        padding: 20px;
+        border: 2px solid #108a7e;
+        border-radius: 30px;
+
+        box-shadow: 3px 5px 3px #1f6f787a;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #108a7e;
+        background-color: #fcf7f8;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .social {
+        font-size: 16px;
+        margin: 1.5%;
+        text-align: center;
+      }
+      .creator {
+        font-size: 14px;
+        margin: 1%;
+        padding: 5px;
+        text-align: center;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Your Ukrainian Photographer 📷</h1>
+    <h2>👋 Meet Misha,<br />a young artist, a creative mind, who:</h2>
+    <ul>
+      <li class="description">📸 loves to shot nature, portraits and pets</li>
+      <li class="description">😁 is a friendly person aiming to help</li>
+      <li class="description">🔥 loves solving hard challenges</li>
+      <li class="description">⚡️ is an extremely fast learner</li>
+    </ul>
+    <br />
+    <ul>
+      <li class="images">
+        <img
+          class="portrait"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/011/original/IMG_Me.jpg?1652272129"
+          alt="A photo of a lady in a forest"
+        />
+      </li>
+      <li class="images">
+        <img
+          class="nature"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/831/original/IMG_20220509_203232_626.jpg?1652117611"
+          alt="A photo of plants"
+        />
+      </li>
+      <li class="images">
+        <img
+          class="cat"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/829/original/IMG_20220509_203013_885.jpg?1652117570"
+          alt="A photo of a cat"
+        />
+      </li>
+    </ul>
+    <br />
+    <ul>
+      <li class="photoTitles">Portrait photography</li>
+      <li class="photoTitles">Your choice here!</li>
+      <li class="photoTitles">Animal photography</li>
+    </ul>
+    <br />
+    <ul>
+      <li class="priceOfPhotoshoot"><h3>Price: €30</h3></li>
+      <li class="priceOfPhotoshoot"><h3>Depends on the idea</h3></li>
+      <li class="priceOfPhotoshoot"><h3>Price: €30</h3></li>
+    </ul>
+    <br />
+    <ul>
+      <li class="timeOfPhotoshoot">
+        <p>⏰ Up to 2 hours of work</p>
+      </li>
+      <li class="timeOfPhotoshoot">
+        <p>⏰ Up to 2 hours of work</p>
+      </li>
+      <li class="timeOfPhotoshoot">
+        <p>⏰ 1 hour of work</p>
+      </li>
+    </ul>
+    <ul>
+      <li class="locationOfPhotoshoot">
+        <p>🌲 Street photography or a studio of your choice</p>
+      </li>
+      <li class="locationOfPhotoshoot"><p>🤔 Your idea - your location!</p></li>
+      <li class="locationOfPhotoshoot">
+        <p>🌲 Forest photography or a studio of your choice</p>
+      </li>
+    </ul>
+    <ul>
+      <li class="amountOfPhotos">
+        <p>🎞 60 finished professionally retouched photos</p>
+      </li>
+      <li class="amountOfPhotos">
+        <p>🎞 50 finished professionally retouched photos</p>
+      </li>
+      <li class="amountOfPhotos">
+        <p>🎞 40 finished professionally retouched photos</p>
+      </li>
+    </ul>
+    <ul>
+      <li class="timeForEditing">
+        <p>😄 All photos will be ready in two weeks</p>
+      </li>
+      <li class="timeForEditing">
+        <p>😄 All photos will be ready in four weeks</p>
+      </li>
+      <li class="timeForEditing">
+        <p>😄 All photos will be ready in three weeks</p>
+      </li>
+    </ul>
+    <ul>
+      <li class="warning">⚠️ This is not a real deal!</li>
+      <li class="warning">⚠️ This is not a real deal!</li>
+      <li class="warning">⚠️ This is not a real deal!</li>
+    </ul>
+    <br />
+    <br />
+    <button type="button">Request a photoshoot!</button>
+    <br />
+    <div class="social">
+      Misha's socials: 📞 1234567890; Insta
+      <a href="https://www.instagram.com/sunset__tesnus/" target="_blank"
+        >@sunset__tesnus</a
+      >
+    </div>
+    <div class="creator">Coded by Olena Kaniuka</div>
+
+    <script>
+      function applyNow() {
+        let name = prompt("What's your name?");
+        let age = prompt("What's your age?");
+        if (age > 12) {
+          let email = prompt("What's your email?");
+          let type = prompt("What type of photoshoot do you want to request?");
+          type = type.toLowerCase();
+          if (type === "nature" || type === "portrait") {
+            alert(
+              "Thank you, " +
+                name +
+                "! We will contact you at " +
+                email +
+                " about your " +
+                type +
+                " photoshoot!"
+            );
+          } else {
+            alert(
+              "Thank you, " +
+                name +
+                "! We will contact you at " +
+                email +
+                " to discuss your " +
+                type +
+                " photoshoot idea!"
+            );
+          }
+        } else {
+          alert(
+            "Sorry, " +
+              name +
+              ", you must be over 12 to request a photoshoot 😢"
+          );
+        }
+      }
+
+      let apply = document.querySelector("button");
+      apply.addEventListener("click", applyNow);
+    </script>
+  </body>
+</html>
