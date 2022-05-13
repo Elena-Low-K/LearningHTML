@@ -31,7 +31,6 @@
         text-align: center;
       }
       h3 {
-        display: inline;
         text-align: center;
       }
       ul,
@@ -46,14 +45,20 @@
         text-align: center;
       }
 
-      /*Images CSS*/
-      li.images {
-        margin: 20px;
-        display: inline;
-        list-style: none;
+      .flexItems {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
       }
+      .item {
+        margin: 0px;
+        width: calc(100% / 3);
+      }
+
+      /*Images CSS*/
       img {
-        padding: 10px;
+        padding: 5px;
+        margin: 10px;
         transition: transform 0.4s;
       }
       img:hover {
@@ -63,13 +68,15 @@
         transition: transform 0.4s;
       }
       .portrait {
-        max-width: 25%;
+        max-width: 95%;
+        margin-left: 10px;
       }
       .nature {
-        max-width: 28.1%;
+        max-width: 95%;
       }
       .cat {
-        max-width: 30%;
+        max-width: 95%;
+        margin-right: 10px;
       }
       /*ul and li CSS*/
       ul,
@@ -77,13 +84,13 @@
         padding: 0;
         margin: 0;
         border: none;
+        text-align: center;
       }
-      li.photoTitles {
+      .photoTitles {
         color: #108a7e;
         font-size: 20px;
 
-        margin: 9%;
-        display: inline;
+        margin: 2.5% 5% 5%;
         list-style: none;
 
         padding: 0;
@@ -95,41 +102,32 @@
       p {
         text-align: center;
         font-size: 16px;
-        display: inline;
         margin: 15% 3%;
         padding: 2px;
       }
 
       /*Pack descriptions CSS*/
-      li.priceOfPhotoshoot {
-        list-style: none;
-        display: inline;
+      .priceOfPhotoshoot {
         text-align: center;
-        margin: 12%;
+        margin: 3%;
       }
-      li.timeOfPhotoshoot {
-        list-style: none;
-        display: inline;
-        margin: 6%;
+      .timeOfPhotoshoot {
+        margin: 3%;
       }
-      li.locationOfPhotoshoot {
-        list-style: none;
-        display: inline;
-        margin: 2%;
+      .locationOfPhotoshoot {
+        margin: 3%;
       }
-      li.amountOfPhotos {
-        list-style: none;
-        display: inline;
+      .amountOfPhotos {
+        margin: 3%;
       }
-      li.timeForEditing {
-        list-style: none;
-        display: inline;
-        margin: 2%;
+      .timeForEditing {
+        margin: 3%;
       }
-      li.warning {
-        display: inline;
-        margin: 10%;
+      .warning {
+        margin: 3%;
       }
+
+      /* Button CSS*/
       button {
         display: block;
         margin: 0 auto;
@@ -182,91 +180,65 @@
       <li class="description">⚡️ is an extremely fast learner</li>
     </ul>
     <br />
-    <ul>
-      <li class="images">
+
+    <div class="flexItems">
+      <div class="item">
         <img
           class="portrait"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/011/original/IMG_Me.jpg?1652272129"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/229/original/ME.jpg?1652457600"
           alt="A photo of a lady in a forest"
         />
-      </li>
-      <li class="images">
+        <p class="photoTitles">Portrait photography</p>
+        <h3 class="priceOfPhotoshoot">Price: €30</h3>
+        <p class="timeOfPhotoshoot">⏰ Up to 2 hours of work</p>
+        <p class="locationOfPhotoshoot">
+          🌲 Street photography or a studio of your choice
+        </p>
+        <p class="amountOfPhotos">
+          🎞 60 finished professionally retouched photos
+        </p>
+        <p class="timeForEditing">😄 All photos will be ready in two weeks</p>
+        <p class="warning">⚠️ <em>This is not a real deal!</em></p>
+      </div>
+
+      <div class="item">
         <img
           class="nature"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/831/original/IMG_20220509_203232_626.jpg?1652117611"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/230/original/nature.png?1652457645"
           alt="A photo of plants"
         />
-      </li>
-      <li class="images">
+        <p class="photoTitles">Your choice here!</p>
+        <h3 class="priceOfPhotoshoot">Depends on the idea</h3>
+        <p class="timeOfPhotoshoot">⏰ Up to 2 hours of work</p>
+        <p class="locationOfPhotoshoot">🤔 Your idea - your location!</p>
+        <p class="amountOfPhotos">
+          🎞 50 finished professionally retouched photos
+        </p>
+        <p class="timeForEditing">😄 All photos will be ready in four weeks</p>
+        <p class="warning">⚠️ <em>This is not a real deal!</em></p>
+      </div>
+
+      <div class="item">
         <img
           class="cat"
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/829/original/IMG_20220509_203013_885.jpg?1652117570"
           alt="A photo of a cat"
         />
-      </li>
-    </ul>
+        <p class="photoTitles">Animal photography</p>
+        <h3 class="priceOfPhotoshoot">Price: €40</h3>
+        <p class="timeOfPhotoshoot">⏰ 1 hour of work</p>
+        <p class="locationOfPhotoshoot">
+          🌲 Forest photography or a studio of your choice
+        </p>
+        <p class="amountOfPhotos">
+          🎞 40 finished professionally retouched photos
+        </p>
+        <p class="timeForEditing">😄 All photos will be ready in three weeks</p>
+        <p class="warning">⚠️ <em>This is not a real deal!</em></p>
+      </div>
+    </div>
     <br />
-    <ul>
-      <li class="photoTitles">Portrait photography</li>
-      <li class="photoTitles">Your choice here!</li>
-      <li class="photoTitles">Animal photography</li>
-    </ul>
-    <br />
-    <ul>
-      <li class="priceOfPhotoshoot"><h3>Price: €30</h3></li>
-      <li class="priceOfPhotoshoot"><h3>Depends on the idea</h3></li>
-      <li class="priceOfPhotoshoot"><h3>Price: €30</h3></li>
-    </ul>
-    <br />
-    <ul>
-      <li class="timeOfPhotoshoot">
-        <p>⏰ Up to 2 hours of work</p>
-      </li>
-      <li class="timeOfPhotoshoot">
-        <p>⏰ Up to 2 hours of work</p>
-      </li>
-      <li class="timeOfPhotoshoot">
-        <p>⏰ 1 hour of work</p>
-      </li>
-    </ul>
-    <ul>
-      <li class="locationOfPhotoshoot">
-        <p>🌲 Street photography or a studio of your choice</p>
-      </li>
-      <li class="locationOfPhotoshoot"><p>🤔 Your idea - your location!</p></li>
-      <li class="locationOfPhotoshoot">
-        <p>🌲 Forest photography or a studio of your choice</p>
-      </li>
-    </ul>
-    <ul>
-      <li class="amountOfPhotos">
-        <p>🎞 60 finished professionally retouched photos</p>
-      </li>
-      <li class="amountOfPhotos">
-        <p>🎞 50 finished professionally retouched photos</p>
-      </li>
-      <li class="amountOfPhotos">
-        <p>🎞 40 finished professionally retouched photos</p>
-      </li>
-    </ul>
-    <ul>
-      <li class="timeForEditing">
-        <p>😄 All photos will be ready in two weeks</p>
-      </li>
-      <li class="timeForEditing">
-        <p>😄 All photos will be ready in four weeks</p>
-      </li>
-      <li class="timeForEditing">
-        <p>😄 All photos will be ready in three weeks</p>
-      </li>
-    </ul>
-    <ul>
-      <li class="warning">⚠️ This is not a real deal!</li>
-      <li class="warning">⚠️ This is not a real deal!</li>
-      <li class="warning">⚠️ This is not a real deal!</li>
-    </ul>
-    <br />
-    <br />
+
     <button type="button">Request a photoshoot!</button>
     <br />
     <div class="social">
